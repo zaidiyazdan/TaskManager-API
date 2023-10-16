@@ -1,0 +1,33 @@
+*******************************************
+
+Rest API - representational state transfer
+It determine how api looks like 
+It is a pattern (what ever pattern you use just stick with it)
+
+get    ('/api/v1/tasks')  - get all the tasks (Read)
+post    ('api/v1/tasks') - create a new task (Create)
+get    ('api/v1/tasks/:id') - get single tasks (Read)
+patch/Put   ('/api/v1/tasks/:id') - update task (Update)
+delete    ('/api/v1/tasks/:id') - delete task  (Delete)
+
+*******************************************
+
+MongoDB - A nosql, non relational database
+it stores json database,it is easy to get started,free cloud hosting on atlas.
+
+We have collection of documents
+we have document which represent single item it is a set of key value pairs.
+
+********************************************
+
+mongoose - it has straight forward api and do many works related to mongodb.
+
+Patch vs put (both used to update) 
+Put - replacing the existing resource
+Patch - for partical update.
+
+//Port :: When we depoloy then port value is set up by the platform. as it needs to handle more than one application at a time.Which is set by the platform.
+
+for that we do port = process.env.PORT || 3000
+
+here if there is a defied port it will use it or else it will use 3000
